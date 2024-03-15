@@ -22,14 +22,15 @@ export const Navegacion = () => {
 
   return (
     <>
-      <div className="shadow-md w-full fixed top-0 left-0 ">
-        <div className="md:flex items-center justify-between bg-white py-2 md:px-10 px-7">
+      <hr />
+      <div className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 ">
+        <div className="md:flex items-center justify-between bg-slate-600 py-2 md:px-10 px-7">
           <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
-            <span className="text-3xl text-indigo-600 mmr-1 pt-2">
+            <span className="text-3xl text-indigo-600 mmr-1 pt-2 mr-4">
               <ion-icon name="logo-ionic"></ion-icon>
             </span>
             <NavLink to="/">
-              <img src={coral} alt="" />
+              <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={coral} alt="" />
             </NavLink>
           </div>
           <div
@@ -39,22 +40,26 @@ export const Navegacion = () => {
             <ion-icon name={open ? "close" : "menu"}></ion-icon>
           </div>
           <ul
-            className={`md:flex md:items-center md:pb-0 pb-2 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500
-          ease-in ${
-            open ? "top-18 opacity-100" : "top-[-490px] md:opacity-100 "
-          } `}
+            className={`md:flex md:items-center md:pb-0 pb-2 absolute md:static bg-slate-500  text-opacity-25 md:z-auto z-[-1] left-0  w-full md:w-auto md:pl-0  transition-all duration-500 ease-in
+             ${open ? "top-18 opacity-100" : "top-[-490px] md:opacity-100 "} `}
           >
             {Links.map((Link) => (
-              <li key={Link.name} className="md:ml-8 text-xl md:my-2 my-7 text-black   ">
+              <li
+                key={Link.name}
+                className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-4 me-2 mb-3 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700  "
+              >
                 <NavLink
-                  className={({ isActive }) => (isActive ? "text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 " : null)}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                      : null
+                  }
                   to={Link.link}
                 >
                   {Link.name}{" "}
                 </NavLink>
               </li>
             ))}
-            {/* <Btn>Get Started</Btn> */}
           </ul>
         </div>
       </div>
