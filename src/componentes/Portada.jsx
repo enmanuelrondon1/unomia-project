@@ -106,7 +106,7 @@ export const Portada = () => {
           <div className="portada1 contenido mt-6">
             <div className="portada-video">
               <ReactPlayer
-                url='img/video-coral.mp4'
+                url="img/video-coral.mp4"
                 playing
                 loop
                 muted
@@ -169,103 +169,94 @@ export const Portada = () => {
           </div>
         </div>
 
-        <h1 className="text-5xl text-center font-extrabold dark:text-white mt-6 py-4">
+        <h1 className="text-5xl text-center font-extrabold dark:text-white mt-6 py-8">
           TAKE ACTION FOR THE REEF TODAY
         </h1>
 
-        <div className="grid grid-cols-3 gap-3 p-9 m-4 px-5 py-10  ">
-          <figure className="grid bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+        <div className="grid grid-cols-3 gap-3 bg-slate-900  px-5 py-10  ">
+          <figure className="md:items-center bg-slate-500 rounded-xl p-8 md:p-0 dark:bg-slate-800 ">
             <img
-              className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto m-6"
+              className="w-24 h-24 md:w-72 md:h-auto md:rounded-none rounded-full mx-auto mt-4"
               src="/img/imagen7.jpg"
               alt=""
               width="384"
               height="512"
             />
-
-            <div className="pt-6 md:p-8 text-center md:text-left items-center space-y-4">
+            <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
               <figcaption className="font-medium">
-                <div className="text-center text-sky-500 dark:text-sky-400">
-                  ADOPT
+                <div className="text-slate-700 text-center dark:text-slate-500">
+                  <a
+                    href="#"
+                    className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  >
+                    ADOPT
+                  </a>
                 </div>
-                <div className="text-slate-700 dark:text-slate-500"></div>
               </figcaption>
-              <blockquote className="text-center">
-                <p className="text-justify font-medium text-black dark:text-white">
-                  Make a statement by wearing our merch to represent the
-                  movement and directly support our work, with 100% of the
-                  proceeds reinvested into our mission.
+              <blockquote>
+                <p className="text-black text-justify font-medium">
+                  Join our adoption program by choosing your favorite corals
+                  that we will grow in our gardens and outplant onto the reef to
+                  restore it.
                 </p>
-                <a
-                  href="adoptar"
-                  className=" items-center transition-colors hover:bg-sky-900 hover:text-slate-100 focus:ring-2 focus:ring-slate-200 text-blue-500"
-                >
-                  ADOPT A CORAL
-                </a>
               </blockquote>
             </div>
           </figure>
 
-          <figure className="grid bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+          <figure className="md:items-center bg-slate-500 rounded-xl p-8 md:p-0 dark:bg-slate-800">
             <img
-              className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto m-6"
+              className="w-24 h-24 md:w-72 md:h-auto md:rounded-none rounded-full mx-auto mt-4"
               src="/img/imagen8.jpg"
               alt=""
               width="384"
               height="512"
             />
-
-            <div className="pt-6 md:p-8 text-center md:text-left items-center space-y-4">
+            <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
               <figcaption className="font-medium">
-                <div className="text-center text-sky-500 dark:text-sky-400">
-                  WEAR
+                <div className="text-slate-700 text-center dark:text-slate-500">
+                  <a
+                    href="#"
+                    className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  >
+                    WEAR
+                  </a>
                 </div>
-                <div className="text-slate-700 dark:text-slate-500"></div>
               </figcaption>
-              <blockquote className="text-center">
-                <p className="text-justify font-medium text-black dark:text-white">
+              <blockquote>
+                <p className="text-black text-justify font-medium">
                   Make a statement by wearing our merch to represent the
                   movement and directly support our work, with 100% of the
                   proceeds reinvested into our mission.
                 </p>
-                <a
-                  href="adoptar"
-                  className=" items-center transition-colors hover:bg-sky-500 hover:text-slate-100 focus:ring-2 focus:ring-slate-200 text-blue-500"
-                >
-                  SHOP SUSTAINAIBLY
-                </a>
               </blockquote>
             </div>
           </figure>
-
-          <figure className="grid bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+          <figure className="md:items-center bg-slate-500 rounded-xl p-8 md:p-0 dark:bg-slate-800">
             <img
-              className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto m-6"
-              src="/img/imagen6.jpg"
+              className="w-24 h-24 md:w-72 md:h-auto md:rounded-none rounded-full mx-auto mt-4"
+              src="/img/imagen8.jpg"
               alt=""
               width="384"
               height="512"
             />
-
-            <div className="pt-6 md:p-8 text-center md:text-left items-center space-y-4">
+            <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
               <figcaption className="font-medium">
-                <div className="text-center text-sky-500 dark:text-sky-400">
-                  DONATE
+                <div className="text-slate-700 text-center dark:text-slate-500">
+                  <a
+                    href="#"
+                    className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  >
+                    DONATE
+                  </a>
                 </div>
-                <div className="text-slate-700 dark:text-slate-500"></div>
               </figcaption>
-              <blockquote className="text-center">
-                <p className="text-justify font-medium text-black dark:text-white">
+
+              <blockquote>
+                <p className="text-black text-justify font-medium">
                   Donate to help fund all of our work from coral restoration
                   activities to science projects, technology developments and
                   advocacy programs.
                 </p>
-                <a
-                  href="adoptar"
-                  className=" items-center transition-colors hover:bg-sky-500 hover:text-slate-100 focus:ring-2 focus:ring-slate-200 text-blue-500"
-                >
-                  MAKE A DONATION
-                </a>
               </blockquote>
             </div>
           </figure>
@@ -337,33 +328,47 @@ export const Portada = () => {
             </p>
           </div>
         </main>
-        <section className=" grid grid-cols-2 justify-items-center py-28 w-4/5  mx-auto ">
-        <div className="text-center items-center text-4xl ">
-          <h3 className="h-10">JOIN THE MOVEMENT</h3>
-          <p className=" text-justify text-slate-400">
-            Things are moving at full speed at Coral Gardeners, so get ready
-            tofollow along and receive updates straight from the field.
-          </p>
-        </div>
-        <div className="grid m-auto p-7  ">
-          <input
-            className="footer-button text-black "
-            type="text"
-            placeholder="E-mail"
-            value={send}
-            onChange={valor}
-          />
-          <button type="submit" onClick={envia} className="footer-button mt-3">
-            Send
-          </button>
-        </div>
-      </section>
 
-      <span className="">
-        <h2 className="text-center text-4xl py-10">
-          Coral Gardeners has a 501(c)(3) counterpart in the United States.
-        </h2>
-      </span>
+       
+
+        <main className="py-4 px-4 sm:p-6 md:py-10 md:px-8 ">
+            <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
+              <span className="mt-4 text-sm grid grid-cols-2 leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">
+                <div className="text-center items-center text-4xl ">
+                  <h3 className="h-24">JOIN THE MOVEMENT</h3>
+                  <p className=" text-justify text-slate-400">
+                    Things are moving at full speed at Coral Gardeners, so get
+                    ready tofollow along and receive updates straight from the
+                    field.
+                  </p>
+                </div>
+                <div className="grid m-auto p-7  ">
+                  <input
+                    type="text"
+                    id="success"
+                    className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                    placeholder="E-mail"
+                    value={send}
+                    onChange={valor}
+                  />
+                  <button
+                    type="button"
+                    className="text-white mt-4 bg-blue-500 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center  mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                    onClick={envia}
+                  >
+                    Send
+                  </button>
+                </div>
+              </span>
+            </div>
+          
+        </main>
+
+        <span className="">
+          <h2 className="text-center text-4xl py-10">
+            Coral Gardeners has a 501(c)(3) counterpart in the United States.
+          </h2>
+        </span>
 
         <Footer />
       </div>

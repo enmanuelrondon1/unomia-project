@@ -74,9 +74,13 @@ const redOptions = { color: 'red' }
 
   return (
     <>
+    <h1 className="text-4xl text-center font-bold text-white mt-6 py-4">
+      Lugares donde se encuentra Unomia
+    </h1>
+ 
 
 
-  <MapContainer className="mapa" center={center} zoom={13} scrollWheelZoom={false} >
+  <MapContainer className="mapa  " center={center} zoom={13} scrollWheelZoom={false} >
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
@@ -97,7 +101,7 @@ const redOptions = { color: 'red' }
     <Rectangle bounds={rectangle} pathOptions={blackOptions} />
   </MapContainer>,
 
-<MapContainer className="mapa" center={position1} zoom={13} scrollWheelZoom={false}>
+{/* <MapContainer className="mapa" center={position1} zoom={13} scrollWheelZoom={false}>
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -107,7 +111,7 @@ const redOptions = { color: 'red' }
         A pretty CSS3 popup. <br /> Easily customizable.
       </Popup>
     </Marker>
-  </MapContainer>,
+  </MapContainer>, */}
 
 {/* <MapContainer className="mapa" center={[9.432057668636016, -64.47554449926618]} zoom={13} scrollWheelZoom={false}>
   <TileLayer
