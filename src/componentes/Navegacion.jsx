@@ -23,14 +23,14 @@ export const Navegacion = () => {
   return (
     <>
       <hr />
-      <div className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 ">
-        <div className="md:flex items-center justify-between bg-slate-600 py-2 md:px-10 px-7">
-          <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
+      <div className="bg-white dark:bg-white fixed w-full z-20 top-0 start-0 border-b border-white dark:border-white ">
+        <div className="md:flex items-center justify-between bg-white py-2 md:px-10 px-7">
+          <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-white">
             <span className="text-3xl text-indigo-600 mmr-1 pt-2 mr-4">
               <ion-icon name="logo-ionic"></ion-icon>
             </span>
             <NavLink to="/">
-              <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={coral} alt="" />
+              <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="https://firebasestorage.googleapis.com/v0/b/unomia-stolonifera.appspot.com/o/Navegacion%2F1.png?alt=media&token=666a5075-7bf6-4d91-9494-c2e203ae2709" alt="" />
             </NavLink>
           </div>
           <div
@@ -46,7 +46,7 @@ export const Navegacion = () => {
             {Links.map((Link) => (
               <li
                 key={Link.name}
-                className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-4 me-2 mb-3 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700  "
+                className="text-white bg-white hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-4 me-2 mb-3 dark:bg-white dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700  "
               >
                 <NavLink
                   className={({ isActive }) =>
